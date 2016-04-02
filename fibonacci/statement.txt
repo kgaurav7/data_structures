@@ -1,0 +1,7 @@
+The Fibonacci numbers are defined as follows: F0 = 0, F1 = 1, and Fi = Fi-1 + Fi-2 for i = 2.
+
+Input Format: Given two integers n and m, output Fn mod m (that is, the remainder of Fn when divided by m).
+
+Constraints. 1 <= n <= 1018, 2 <= m <= 105
+
+Output Format. Output Fn mod m.

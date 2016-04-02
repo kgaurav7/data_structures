@@ -1,0 +1,140 @@
+100
+54
+65
+19
+6
+37
+97
+76
+21
+48
+95
+11
+30
+12
+32
+78
+93
+32
+6
+14
+96
+21
+89
+63
+85
+75
+48
+13
+40
+22
+35
+94
+5
+97
+39
+41
+85
+11
+51
+24
+2
+14
+97
+65
+54
+28
+83
+57
+39
+30
+73
+68
+90
+34
+43
+85
+26
+66
+37
+15
+24
+4
+80
+13
+96
+75
+79
+26
+93
+30
+72
+1
+61
+6
+37
+57
+71
+69
+12
+27
+86
+32
+55
+85
+94
+23
+12
+64
+97
+90
+12
+82
+93
+18
+1
+12
+71
+59
+86
+51
+20
+import sys
+import os
+
+def  prevSmaller(arr):
+    output = [-1]
+    stack = []
+    stack.append(arr[0])
+        
+    for index in range(1, len(arr)):
+        while len(stack) and arr[index] <= stack[-1]:
+            stack.pop()
+                
+        if not len(stack):
+            output.append(-1)
+        else:
+            output.append(stack[-1])
+        stack.append(arr[index])
+        
+    return output
+
+f = open('output04.txt', 'w')
+    
+
+_arr_cnt = 0
+_arr_cnt = int(raw_input())
+_arr_i=0
+_arr = []
+while _arr_i < _arr_cnt:
+    _arr_item = int(raw_input());
+    _arr.append(_arr_item)
+    _arr_i+=1
+    
+
+res = prevSmaller(_arr);
+for res_cur in res:
+    f.write(str(res_cur) + "\n")
+
+f.close()
+
