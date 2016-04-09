@@ -1,0 +1,24 @@
+Bill Gates is on one of his philanthropic journeys to a village in Utopia. He has N packets of candy and would like to distribute one packet to each of the K children in the village. Each packet may contain a different number of candy pieces. To avoid any fighting among the children, he would like to pick K out of N packets, such that unfairness is minimized.
+
+Suppose the K packets have (x1, x2, x3,….xk) candy pieces in them, where xi denotes the number of candies in the ith packet. We define unfairness as
+max(x1,x2,…xk) - min(x1,x2,…xk)
+where max denotes the highest value present in the argument list, and min denotes the lowest. Can you figure out the subset with minimum unfairness?
+
+
+Input Format
+The first line contains an integer k.
+The second line contains an integer which represents the size of the array arr. The following lines comprise the elements of the array arr. Each of these lines contains an integer that denotes the candy in the ith packet.
+ 
+Output Format
+A single integer which will be the minimum unfairness.
+ 
+Constraints
+1<=N<=100,000
+1<=K<=N
+0<= number of candies in any packet <=10,000,000,00
+
+
+Sample Explanation:
+Here K = 3. We can choose packets that contain 10,20,30 candies. The unfairness is
+max(10,20,30) - min(10,20,30) = 30 - 10 = 20
+

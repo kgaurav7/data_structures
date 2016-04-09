@@ -1,0 +1,10 @@
+The dot product of two sequences a1, a2, .....,an  and b1, b2, .....,bn of the same length is equal to
+a1 * b1  + a2 * b2  +..... + an * bn 
+ 
+Goal is that given two such sequences find the minimum possible dot product by rearranging the sequences
+ 
+Constraints. 1 <= n <= 1000 ; -100,000 <= ai , bi =<= 100,000 for all 1 <= i <= n
+ 
+Input: First Line contains the count if numbers in each sequence. Each of Second and Third lines contains n integers separated by space denoting sequences a1, a2,...,an  and b1, b2, ...., bn
+ 
+Output: Integer representing minimum possible dot product

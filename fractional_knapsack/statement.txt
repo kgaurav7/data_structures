@@ -1,0 +1,9 @@
+Given a set of items and total capacity of a knapsack, find the maximal value of fractions of items that fit into the knapsack.
+ 
+The first line of the input contains the number n of items and the capacity W of a knapsack. The next n lines define the values and weights of the items. The i-th line contain integers vi and wi — the value and the weight of i-th item, respectively. 
+ 
+Constraints. 1 <= n <= 1000 , 0 <= W, vi, wi <= 2 *1000,000 for all 1 <= i <= n. All the numbers are integers.
+ 
+Output the maximal value of fractions of items that fit into the knapsack. Round your item to the largest smaller integer if output is fractional
+  
+Sample Explanation: We will take 1/3rd of item with value 500 and weight 30. So Output would be 500/3 = int(166.67) = 166
